@@ -25,7 +25,7 @@
               <span>{{ item.authName }}</span>
             </template>
             <template v-if="item.children">
-              <el-menu-item :index="'/' + item.path" v-for="(v) in item.children" :key="v.id" @click="savePath('/' + item.path)">
+              <el-menu-item :index="'/' + v.path" v-for="(v) in item.children" :key="v.id" @click="savePath('/' + v.path)">
                 <i class="el-icon-menu"></i>
                 <span>{{ v.authName }}</span>
               </el-menu-item>
